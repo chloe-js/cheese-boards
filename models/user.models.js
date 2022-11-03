@@ -9,12 +9,12 @@ User.init({
 
     name: {
         type: DataTypes.STRING,
-        // primaryKey: true,
-        // autoIncrement:true,
+        primaryKey: true,
+        autoIncrement:true,
     },
     email: {
         type: DataTypes.STRING,
-        // allowNull: false,
+        allowNull: false,
     },
 
 }, { 

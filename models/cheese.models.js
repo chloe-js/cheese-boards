@@ -8,6 +8,8 @@ Cheese.init({
 
     title: {
         type: DataTypes.STRING,
+        primaryKey: true,
+        autoIncrement:true,
     },
     description: {
         type: DataTypes.STRING,

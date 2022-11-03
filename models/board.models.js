@@ -8,6 +8,8 @@ Board.init({
 
     type: {
         type: DataTypes.STRING,
+        primaryKey: true,
+        autoIncrement:true,
     },
     description: {
         type: DataTypes.STRING,
@@ -15,6 +17,7 @@ Board.init({
     rating: {
         type: DataTypes.NUMBER,
     }
+
 
 }, { 
     sequelize: db 
