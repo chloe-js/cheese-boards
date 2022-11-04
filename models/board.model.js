@@ -21,12 +21,6 @@ Board.init({
     rating: {
         type: DataTypes.NUMBER,
     },
-    cheeseId: {
-        type: DataTypes.INTEGER,
-    },
-    // userId: {
-    //     type: DataTypes.INTEGER,
-    // },
 }, { 
     sequelize: db 
 })

@@ -37,16 +37,16 @@ async function main() {
 
 
     //MANY to MANY
-    // let cheeses = await Cheese.findAll()
+    let cheeses = await Cheese.findAll()
     // // console.log(cheeses);// large array of objects every book is in an object dont need data values = better with JSON
-    // // console.table(cheeses.map(c => c.toJSON()))
+    console.table(cheeses.map(c => c.toJSON()))
 
     // let boards = await Board.findAll()
     // await cheeses[0].addBoard(boards[0]) // addQuote is a method created from the relationship
     // await cheeses[0].addBoard(boards[1])
-
     // books = await Book.finAll()
     // console.table((await books[0].getBoard()).map(q => q.toJASON())); 
+
 }
 
 main()

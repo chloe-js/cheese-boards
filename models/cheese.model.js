@@ -18,9 +18,6 @@ Cheese.init({
     description: {
         type: DataTypes.STRING,
     },
-    boardId: {
-        type: DataTypes.INTEGER,
-    },
 }, { 
     sequelize: db 
 })
