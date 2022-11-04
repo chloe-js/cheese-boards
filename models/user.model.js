@@ -6,19 +6,24 @@ const db = require('../db/db')
 class User extends Model { }
 
 User.init({
-
-    name: {
-        type: DataTypes.STRING,
+    // auto increment  1-7
+    id: {
+        type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement:true,
     },
+    name: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
     email: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: false
+    },
+    boardId: {
+        type: DataTypes.INTEGER,
     },
 
-}, { 
-    sequelize: db 
-})
+}, { sequelize: db })
 
 module.exports = User

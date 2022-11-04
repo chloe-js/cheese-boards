@@ -5,16 +5,22 @@ const db = require('../db/db')
 class Cheese extends Model { }
 
 Cheese.init({
-
-    title: {
-        type: DataTypes.STRING,
+    // auto increment  1-20
+    id: {
+        type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement:true,
+    },
+    title: {
+        type: DataTypes.STRING,
+        allowNull: false
     },
     description: {
         type: DataTypes.STRING,
     },
-
+    boardId: {
+        type: DataTypes.INTEGER,
+    },
 }, { 
     sequelize: db 
 })
