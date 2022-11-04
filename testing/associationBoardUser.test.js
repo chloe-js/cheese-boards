@@ -14,8 +14,8 @@ describe('Users and boards...', () => {
             email: 'email1@email.com'
         })
         const board1 = await Board.create({
-            type: 'newBoard',
-            describe: 'new description',
+            type: 'Aged cheese board',
+            describe: 'Assorted soft cheeses',
             rating: 3
         })
 
